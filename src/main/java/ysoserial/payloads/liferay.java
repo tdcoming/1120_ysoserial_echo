@@ -2,11 +2,9 @@ package ysoserial.payloads;
 
 import org.apache.commons.beanutils.BeanComparator;
 import ysoserial.features.GenerateLiferay;
-import ysoserial.payloads.annotation.Authors;
 import ysoserial.payloads.annotation.Dependencies;
 import ysoserial.payloads.external.Liferay_linux;
 import ysoserial.payloads.external.Liferay_win;
-import ysoserial.payloads.util.Gadgets1;
 import ysoserial.payloads.util.Gadgets2;
 import ysoserial.payloads.util.PayloadRunner;
 import ysoserial.payloads.util.Reflections;
@@ -17,7 +15,7 @@ import java.util.PriorityQueue;
 
 @SuppressWarnings({"rawtypes", "unchecked"})
 @Dependencies({"commons-beanutils:commons-beanutils:1.9.2", "commons-collections:commons-collections:3.1", "commons-logging:commons-logging:1.2"})
-public class liferay_CommonsBeanutils1 implements ObjectPayload<String> {
+public class liferay implements ObjectPayload<String> {
     public String getObject(HashMap<String, String> vars) throws Exception {
         String platform = vars.get("platform");
 
@@ -49,6 +47,6 @@ public class liferay_CommonsBeanutils1 implements ObjectPayload<String> {
     }
 
     public static void main(final String[] args) throws Exception {
-        PayloadRunner.run(liferay_CommonsBeanutils1.class, args);
+        PayloadRunner.run(liferay.class, args);
     }
 }

