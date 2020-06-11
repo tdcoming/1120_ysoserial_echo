@@ -27,9 +27,12 @@ Usage: java -jar yso-echo-all.jar liferay_CommonsBeanutils1 linux
 Usage: java -jar yso-echo-all.jar apereo_CommonsCollections2 linux
 
 [Add Request get/post parameter] c=d2hvYW1p (whoami)
+在get post 参数中加入 c=d2hvYW1p (whoami)
 ```
 
 ## 0x04 Screenshot
+
+shiro spring环境回显
 ![shiro_spring_env.png](./screenshot/shiro_spring_env.png)
 
 ## 0x05 Reference
