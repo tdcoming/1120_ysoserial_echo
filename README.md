@@ -1,6 +1,7 @@
-# 反序列化漏洞回显部分框架和场景下的环境
+# ysoserial_echo
 
 ## 0x01 Introduce
+JAVA反序列化漏洞回显部分框架和场景下的环境
 
 1. Request/Response回显
 2. 支持win和linux payload
