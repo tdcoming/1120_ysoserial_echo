@@ -70,7 +70,7 @@
 		<dependency>
 			<groupId>com.liferay</groupId>
 			<artifactId>com.liferay.registry.api</artifactId>
-			<version>1.0</version>
+			<version>1.3.6</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/liferay/com.liferay.registry.api.jar</systemPath>
 		</dependency>
